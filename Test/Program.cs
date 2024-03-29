@@ -19,7 +19,7 @@ provider.Connection.CreateIndex(typeof(TestModel));
 
 var sb = new StringBuilder();
 
-for (var i = 0; i < 125; i++)
+for (var i = 0; i < 250; i++)
 {
     sb.Append("test");
 }
