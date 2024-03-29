@@ -5,9 +5,10 @@ namespace Test;
 [Document]
 public class TestModel
 {
-    [Indexed]
+    [Indexed(Sortable = true)]
     public string Name { get; set; }
-    [Indexed]
+    [Indexed(Sortable = true)]
     public int Age { get; set; }
+    [Searchable]
     public string MetaData { get; set; }
 }

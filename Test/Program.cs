@@ -31,7 +31,7 @@ var tasks = new Queue<Task>();
 var random = new Random();
 
 var stopwatch = Stopwatch.StartNew();
-for (var i = 0; i < 80_000; i++)
+for (var i = 0; i < 140_000; i++)
 {
     tasks.Enqueue(provider.Connection.SetAsync(new TestModel(){Age = random.Next(50)+18, Name = "foobarbaz", MetaData = str}));
 
